@@ -1,0 +1,26 @@
+<div class="header">
+<span class="p-input-icon-left header__search" >
+    <i class="pi pi-search"></i>
+    <input class="header__search" type="text" pInputText placeholder="Search" />
+</span>
+</div>
+
+<div class="posts">
+
+  <p-card class="posts__post" *ngFor="let post of posts"
+          header="This is the header"
+          subheader="20.20.2022">
+    {{post}}
+
+    <ng-template pTemplate="header">
+      <img class="posts__post-image" alt="Card" src="assets/image.jpg">
+    </ng-template>
+
+    here comes the body of the post
+    <ng-template pTemplate="footer">
+      <div class="posts__post-footer">
+        <a routerLink="1">more</a>
+      </div>
+    </ng-template>
+  </p-card>
+</div>

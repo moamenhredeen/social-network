@@ -1,0 +1,33 @@
+
+$control-width: 50%;
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 25px;
+  background: var(--surface-ground);
+  width: $control-width;
+  margin: 50px auto;
+}
+
+.form__heading{
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.form__group{
+  display: flex;
+  width: 50%;
+  gap: 10px;
+}
+
+.form__group-item{
+  width: 100%;
+}
+
+.form__control{
+  width: $control-width;
+}

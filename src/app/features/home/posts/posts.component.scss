@@ -1,0 +1,24 @@
+.header{
+}
+
+.header__search{
+  width: 100%;
+}
+
+.posts{
+  margin: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.posts__post-image{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.posts__post-footer{
+  display: flex;
+  justify-content: end;
+}

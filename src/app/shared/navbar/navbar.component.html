@@ -1,0 +1,13 @@
+
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <div class="navbar__logo">
+      <img src="assets/logo.png" height="40" class="mr-2">
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="end">
+    <input type="text" pInputText placeholder="Search">
+    <p-button class="navbar__signout" routerLink="/signup">Sign Out</p-button>
+  </ng-template>
+</p-menubar>
